@@ -163,10 +163,12 @@ nav.scrolled {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    object-fit: cover;
+    object-fit: contain;   /* show the whole image */
+    background-color: #0A0E27; /* fill empty space so it blends with site bg */
     box-shadow: 0 20px 60px rgba(0, 180, 216, 0.3);
     border: 3px solid rgba(0, 180, 216, 0.3);
 }
+
 
 .profile-img-container::before {
     content: '';
@@ -545,3 +547,4 @@ footer {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
 }
+
