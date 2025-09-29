@@ -356,7 +356,11 @@ section {
     color: var(--accent);
     font-size: 1.1rem;
     font-weight: 600;
+    white-space: normal;       /* allow wrapping */
+    word-break: keep-all;      /* don’t break inside words */
+    overflow-wrap: break-word; /* break only if absolutely needed */
 }
+
 
 .experience-date {
     color: #B8C5D6;
@@ -565,3 +569,4 @@ footer {
         display: flex;
     }
 }
+
